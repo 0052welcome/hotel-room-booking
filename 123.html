@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Room Booking</title>
+    <link rel="stylesheet" href="456.css">
+</head>
+<body style="background-image: url(https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);">
+
+    <header>
+    <marquee><h1>Welcome to Our Hotel</h1></marquee>
+    <nav>
+        <ul>
+            <li><a href="#book-room">Book a Room</a></li>
+            <li><a href="#booking-history">Booking History</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="book-room">
+    <h2>Book Your Room</h2>
+    <form id="booking-form">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" required>
+
+        <label for="Adhaar-no"><b>Adhaar-no</b></label>
+        <input type="text" placeholder="Enter Adhaar-no" name="Adhaar-no" required>
+
+        <label for="checkin">Check-in Date:</label>
+        <input type="date" id="checkin" required>
+
+        <label for="checkout">Check-out Date:</label>
+        <input type="date" id="checkout" required>
+
+        <label for="room-type">Room Type:</label>
+        <select id="room-type">
+            <option value="single">Single Room - $100 per night</option>
+            <option value="double">Double Room - $150 per night</option>
+            <option value="suite">Suite - $250 per night</option>
+        </select>
+
+        <button type="submit">Book Now</button>
+    </form>
+    <div id="confirmation-message" style="display:none;">
+        <h3>congratulations Your booking is confirmed!</h3>
+        <p id="booking-details"></p>
+    </div>
+</section>
+
+<section id="booking-history">
+    <h2>Booking History</h2>
+    <ul id="booking-history-list"></ul>
+</section>
+
+<section id="room-images">
+    <h2>Our Rooms</h2>
+    <div class="room-image">
+        <h3>Single Room</h3>
+        <img src=https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1.jpg" alt="Single Room" />
+        <p>$100 per night</p>
+    </div>
+    <div class="room-image">
+        <h3>Double Room</h3>
+        <img src="https://images.pexels.com/photos/279746/pexels-photo-279746.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1.jpg" alt="Double Room" />
+        <p>$150 per night</p>
+    </div>
+    <div class="room-image">
+        <h3>Suite</h3>
+        <img src="https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1.jpg" alt="Suite" />
+        <p>$250 per night</p>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 Our Hotel. All rights reserved.</p>
+</footer>
+
+<script src="789.js"></script>
+</body>
+</html>
